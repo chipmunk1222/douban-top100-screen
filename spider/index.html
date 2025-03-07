@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top100电影数据大屏</title>
+  <link rel="stylesheet" href="./css/index.css"></style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">Top100电影数据大屏</div>
+    <div class="main">
+      <div class="left">
+        <div class="left-top-panel box coner-box">
+          <h2 class="title">电影评分分布</h2>
+          <div id="score" class="chart"></div>
+        </div>
+        <div class="left-bottom-panel box coner-box">
+          <h2 class="title">电影评分-评价人数关系</h2>
+          <div id="number" class="chart"></div>
+        </div>
+      </div>
+      <div class="middle">
+        <div class="data-card">
+          <div class="card-item">
+            <div class="card-item-title">Top</div>
+            <div class="card-item-value">100</div>
+          </div>
+          <div class="card-item">
+            <div class="card-item-title">最高评分人数</div>
+            <div class="card-item-value">3087928</div>
+          </div>
+          <div class="card-item">
+            <div class="card-item-title">最高评分</div>
+            <div class="card-item-value">9.7</div>
+          </div>
+        </div>
+        <div id="middle" class="middle-panel box center-box">
+          <h2 class="title">发布地区权重关系</h2>
+          <div id="area" class="chart"></div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="right-top-panel box coner-box">
+          <h2 class="title">电影发行时间统计</h2>
+          <div id="time" class="chart"></div>
+        </div>
+        <div class="right-bottom-panel box coner-box">
+          <h2 class="title">畅销类型分析</h2>
+          <div id="type" class="chart"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/echarts.min.js"></script>
+  <script src="./js/flexible.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/echarts/map/js/world.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>
+  <script src="./js/TypeDistribution.js"></script>
+  <script src="./js/ScoreNumber.js"></script>
+  <script src="./js/TimeDistribution.js"></script>
+  <script src="./js/AreaDistribution.js"></script>
+  <script src="./js/ScoreDistribution.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+<head>
+    <meta charset="utf-8">
+    <title>Global Map with Region Weights</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@latest/dist/echarts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts/map/js/world.js"></script>
+</head>
+<body style="height: 100%; margin: 0">
+    <div id="main" style="height: 80%"></div>
+    <script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('main'));
+
+        var option = {
+            backgroundColor: '#000',
+            title: {
+                text: 'Region Weights on Global Map',
+                left: 'center',
+                textStyle: {
+                    color: '#fff'
+                }
+            },
+            tooltip: {
+                trigger: 'item',
+                formatter: '{b}: {c}'
+            },
+            visualMap: {
+                min: 0,
+                max: 100,
+                left: 'left',
+                top: 'bottom',
+                text: ['High','Low'],           // 文本，默认为数值文本
+                calculable: true,
+                inRange: {
+                    color: ['#50a3ba', '#eac736', '#d94e5d']
+                }
+            },
+            geo: {
+                map: 'world',
+                roam: true,
+                label: {
+                    emphasis: {
+                        show: false
+                    }
+                },
+                itemStyle: {
+                    normal: {
+                        areaColor: '#323c48',
+                        borderColor: '#404a59'
+                    },
+                    emphasis: {
+                        areaColor: '#2a333d'
+                    }
+                }
+            },
+            series: [
+                {
+                    type: 'map',
+                    map: 'world',
+                    geoIndex: 0,
+                    data: [
+                        {name: 'United States', value: 80},
+                        {name: 'China', value: 90},
+                        {name: 'Brazil', value: 70},
+                        {name: 'Australia', value: 50},
+                        {name: 'Russia', value: 60},
+                        {name: 'India', value: 85},
+                        {name: 'United Kingdom', value: 75}
+                    ]
+                }
+            ]
+        };
+
+        myChart.setOption(option);
+    </script>
+</body>
+</html>
