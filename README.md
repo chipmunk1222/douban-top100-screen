@@ -16,3 +16,5 @@ Echarts使用方案：https://www.chipmunk.top/posts/748eb145ed66/
 # 项目预览
 ![https://res.cloudinary.com/dobligy9s/image/upload/v1741707779/douban-big-screen_dsr6ib.jpg](https://res.cloudinary.com/dobligy9s/image/upload/v1741707779/douban-big-screen_dsr6ib.jpg)
 
+# 相关项目
+![https://github.com/chipmunk1222/waste-sorting-frontend?tab=readme-ov-file](https://github.com/chipmunk1222/waste-sorting-frontend?tab=readme-ov-file)
