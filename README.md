@@ -9,9 +9,9 @@
 - 使用geo.js插件实现中央热力图绘制
 
 # 技术文档
-浅谈数据分析：https://www.chipmunk.top/posts/dc646f210e63/
+浅谈数据分析：https://www.chipmunk.top/posts/浅谈数据分析（一）基于Python爬虫的数据分析/
 
-Echarts使用方案：https://www.chipmunk.top/posts/748eb145ed66/
+Echarts使用方案：https://www.chipmunk.top/posts/浅谈数据分析（二）echart数据可视化/
 
 # 项目预览
 ![https://res.cloudinary.com/dobligy9s/image/upload/v1741707779/douban-big-screen_dsr6ib.jpg](https://res.cloudinary.com/dobligy9s/image/upload/v1741707779/douban-big-screen_dsr6ib.jpg)
